@@ -1,1 +1,1 @@
-include ':app', ':logs-android'
+include ':sample', ':logs-android'
