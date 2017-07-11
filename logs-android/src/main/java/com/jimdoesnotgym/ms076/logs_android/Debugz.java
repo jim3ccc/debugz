@@ -19,14 +19,6 @@ public class Debugz {
         }
     }
 
-    public static StackTraceElement getStackTraceElement(){
-        if(Thread.currentThread().getStackTrace().length > 0){
-            return Thread.currentThread().getStackTrace()[0];
-        }else{
-            return null;
-        }
-    }
-
     public static StackTraceElement[] getStackTraceElements(){
         return Thread.currentThread().getStackTrace();
     }

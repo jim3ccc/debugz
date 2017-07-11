@@ -17,18 +17,14 @@ public class sample extends AppCompatActivity {
         Debugz.setEnable(true);
         randomFunction();
 
-        StackTraceElement stackTraceElement = Debugz.getStackTraceElement();
         StackTraceElement[] stackTraceElements = Debugz.getStackTraceElements();
-
-        System.out.println(Debugz.getStackTraceElement());
-        System.out.println(Debugz.getStackTraceElements());
+        for(int i=0; i< stackTraceElements.length; i++){
+            System.out.println("Sample: " + stackTraceElements[i].getMethodName());
+        }
     }
-
-
 
     public void randomFunction(){
         Debugz.out(this.getClass().getSimpleName(), "Hello", true);
         Random random = new Random();
-        System.out.println(random.nextInt());
     }
 }
