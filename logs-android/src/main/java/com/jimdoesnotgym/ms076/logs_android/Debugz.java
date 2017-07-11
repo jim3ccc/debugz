@@ -4,10 +4,18 @@ import android.util.Log;
 
 public class Debugz {
 
+    private static boolean mIsEnable;
+
+    public static void setEnable(boolean isEnable){
+        mIsEnable = isEnable;
+    }
+
     public static void out(String tag, String message, boolean showStackTrace){
-        Log.d(tag, message);
-        if(showStackTrace){
-            new Exception().printStackTrace();
+        if(mIsEnable){
+            Log.d(tag, message);
+            if(showStackTrace){
+                new Exception().printStackTrace();
+            }
         }
     }
 

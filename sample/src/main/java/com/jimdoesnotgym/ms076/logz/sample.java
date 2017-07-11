@@ -14,6 +14,7 @@ public class sample extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample);
 
+        Debugz.setEnable(true);
         randomFunction();
 
         StackTraceElement stackTraceElement = Debugz.getStackTraceElement();
