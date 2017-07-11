@@ -24,14 +24,14 @@ Library to log and print stack trace or get StackTraceElement anywhere
 
 ## Usage
 
+To Enable/Disable Debugz.out()
+```
+Debugz.setEnable(true);
+```
+
 To log and get stack trace:
 ```
 Debugz.out(this.getClass().getSimpleName(), "message", true);
-```
-
-Get StackTraceElement (Nullable)
-```
-StackTraceElement stackTraceElement = Debugz.getStackTraceElement();
 ```
 
 Get list of StackTraceElement
