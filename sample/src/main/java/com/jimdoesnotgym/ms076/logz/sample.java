@@ -16,6 +16,9 @@ public class sample extends AppCompatActivity {
 
         randomFunction();
 
+        StackTraceElement stackTraceElement = Debugz.getStackTraceElement();
+        StackTraceElement[] stackTraceElements = Debugz.getStackTraceElements();
+
         System.out.println(Debugz.getStackTraceElement());
         System.out.println(Debugz.getStackTraceElements());
     }
