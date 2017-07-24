@@ -24,7 +24,9 @@ public class sample extends AppCompatActivity {
     }
 
     public void randomFunction(){
-        Debugz.out(this.getClass().getSimpleName(), "Hello", true);
+        Debugz.out(this.getClass().getSimpleName());
+        Debugz.out(this.getClass().getSimpleName(), "message1", Debugz.Type.E);
+        Debugz.out(this.getClass().getSimpleName(), "message2", true, Debugz.Type.I);
         Random random = new Random();
     }
 }
