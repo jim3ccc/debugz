@@ -16,7 +16,7 @@ Library to log and print stack trace or get StackTraceElement anywhere
 
 ```
 	dependencies {
-	        compile 'com.github.meeej:Debugz-Android:v1.1.0'
+	        compile 'com.github.meeej:Debugz-Android:v1.2.0'
 	}
 ```
 
@@ -37,3 +37,24 @@ Get list of StackTraceElement
 ```
 StackTraceElement[] stackTraceElements = Debugz.getStackTraceElements();
 ```
+
+Complete list of methods:
+```
+public static void out(String tag)
+```
+```
+public static void out(String tag, String message)
+```
+```
+public static void out(String tag, String message, boolean showStackTrace)
+```
+```
+public static void out(String tag, String message, Type type)
+```
+```
+public static void out(String tag, String message, boolean showStackTrace, Type type)
+```
+```
+public static StackTraceElement[] getStackTraceElements()
+```
+
