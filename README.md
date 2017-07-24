@@ -38,7 +38,7 @@ Get list of StackTraceElement
 StackTraceElement[] stackTraceElements = Debugz.getStackTraceElements();
 ```
 
-Complete list of methods:
+##Complete list of methods
 ```
 public static void out(String tag)
 ```
