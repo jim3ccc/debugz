@@ -38,23 +38,3 @@ Get list of StackTraceElement
 StackTraceElement[] stackTraceElements = Debugz.getStackTraceElements();
 ```
 
-## API
-```
-public static void out(String tag)
-```
-```
-public static void out(String tag, String message)
-```
-```
-public static void out(String tag, String message, boolean showStackTrace)
-```
-```
-public static void out(String tag, String message, Type type)
-```
-```
-public static void out(String tag, String message, boolean showStackTrace, Type type)
-```
-```
-public static StackTraceElement[] getStackTraceElements()
-```
-
