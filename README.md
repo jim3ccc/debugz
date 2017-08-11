@@ -16,7 +16,7 @@ Library to log and print stack trace or get StackTraceElement anywhere
 
 ```
 	dependencies {
-	        compile 'com.github.meeej:Debugz-Android:v1.2.0'
+	        compile 'com.github.meeej:Debugz-Android:v1.2.1'
 	}
 ```
 
